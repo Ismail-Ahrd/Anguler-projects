@@ -1,0 +1,52 @@
+.nav{
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.buttons{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons app-button{
+    margin-right: 5px;
+}
+
+.search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search label{
+    border: solid 2px rgb(199, 194, 194);
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-input{
+    color: white;
+    padding: 6px;
+    width: 60px;
+    background-color: rgb(38, 170, 194);
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-input:hover {
+    opacity: 0.7;
+}
+
+.search-input{
+    border: solid 2px rgb(199, 194, 194);
+    border-left: 0;
+    width: 50%;
+}

@@ -1,0 +1,20 @@
+
+<div class="border border-2 py-3 mt-5" style="width: 35%; min-width: 400px;">
+    <div class="d-flex flex-column align-items-center">
+        <h4 class="mb-3">My Tasks :</h4>
+        <app-task-item 
+            [taskName]="'work'" 
+            style="min-width: 350px;">
+        </app-task-item>
+        <app-task-item [taskName]="'study'" style="min-width: 350px;"></app-task-item>
+        <app-task-item [taskName]="'study'" style="min-width: 350px;"></app-task-item>
+        <form class="my-3" style="min-width: 380px;">
+            <div class="input-group">
+                <input type="text" name="text" id="text" class="form-control" placeholder="Add a Task">
+                <button class="btn btn-primary">+</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

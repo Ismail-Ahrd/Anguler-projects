@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="authentification-container">
+        <h1>Id: {{id}}</h1>
+        <div class="authentification-form">
+            <form action="">
+                <div class="form-name">
+                    <Label for="text">Name:</Label>
+                    <input type="text" [(ngModel)]="name" name="name" id="name">
+                </div>
+                <div class="form-price">
+                    <Label for="password">Price: </Label>
+                    <input type="text" [(ngModel)]="price" name="price" id="price">
+                </div>
+                <input class="btn-update" type="button" (click)="update()" value="Update">
+            </form>
+        </div>
+    </div>
+</div>

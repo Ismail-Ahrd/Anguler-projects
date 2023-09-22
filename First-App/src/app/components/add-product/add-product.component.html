@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="authentification-container">
+        <h1>New Product</h1>
+        <div class="authentification-form">
+            <form action="">
+                <div class="form-name">
+                    <Label for="text">Name:</Label>
+                    <input type="text" [(ngModel)]="name" name="name" id="name">
+                </div>
+                <div class="form-price">
+                    <Label for="password">Price: </Label>
+                    <input type="text" [(ngModel)]="price" name="price" id="price">
+                </div>
+                <input class="btn-save" type="button" (click)="add()" value="Save">
+            </form>
+        </div>
+    </div>
+</div>

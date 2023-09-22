@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header">Register</div>
+            <div class="card-body">
+                <form [formGroup]="userFormGroup" (ngSubmit)="handleRegister()" >
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Name:</label>
+                        <input 
+                            type="text" 
+                            name="text" 
+                            id="text" 
+                            class="form-control" 
+                            formControlName="name">
+                        <small 
+                            class="text-danger" 
+                            *ngIf="userFormGroup.controls['name'].errors && userFormGroup.controls['name'].touched">
+                            {{getErrorMessage("Name",userFormGroup.controls["name"].errors)}}
+                        </small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            class="form-control" 
+                            formControlName="email">
+                        <small class="text-danger" 
+                            *ngIf="userFormGroup.controls['email'].errors && 
+                            userFormGroup.controls['email'].touched">
+                            {{getErrorMessage("Email",userFormGroup.controls["email"].errors)}}
+                        </small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="password" 
+                            class="form-control" 
+                            formControlName="password">
+                        <small class="text-danger" 
+                            *ngIf="userFormGroup.controls['password'].errors && 
+                            userFormGroup.controls['password'].touched">
+                            {{getErrorMessage("Password",userFormGroup.controls["password"].errors)}}
+                        </small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

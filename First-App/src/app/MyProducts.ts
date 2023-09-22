@@ -1,0 +1,49 @@
+import {product} from './Product';
+
+export const PRODUCTS:product[]=[
+    {
+        id:"1",
+        name:"computer",
+        price:"5400"
+    },
+    {
+        id:"2",
+        name:"phone",
+        price:"5400"
+    },
+    {
+        id:"3",
+        name:"book",
+        price:"5400"
+    },
+    {
+        id:"4",
+        name:"computer",
+        price:"5400"
+    },
+    {
+        id:"5",
+        name:"phone",
+        price:"5400"
+    },
+    {
+        id:"6",
+        name:"pen",
+        price:"5400"
+    },
+    {
+        id:"7",
+        name:"book",
+        price:"5400"
+    },
+    {
+        id:"8",
+        name:"wallet",
+        price:"5400"
+    },
+    {
+        id:"9",
+        name:"phone",
+        price:"5400"
+    },
+]

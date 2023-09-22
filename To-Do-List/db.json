@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": 3,
+      "name": "Ismail",
+      "email": "ismail@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "id-user": 2,
+      "name": "work",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "something11",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "name": "something12",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "id-user": 1,
+      "name": "Study",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "something21",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "name": "something22",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

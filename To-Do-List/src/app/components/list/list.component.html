@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="border border-2 py-3 mt-5" style="width: 35%; min-width: 400px;">
+                <div class="d-flex flex-column align-items-center">
+                    <h4 class="mb-3">My Lists :</h4>
+                    <app-list-item 
+                        *ngFor="let list of lists"
+                        (deleteItem)="deleteList(list)"
+                        (updateItem)="updateList(list)"
+                        [listName]="list.name" 
+                        style="min-width: 350px;">
+                    </app-list-item>
+                    <div class="input-group my-3" style="width: 380px;">
+                        <button class="btn btn-primary" (click)="addList()">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col">
+            <app-tasks></app-tasks>
+        </div> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

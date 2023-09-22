@@ -1,0 +1,18 @@
+<div class="d-flex flex-column justify-content-between" style="height: 400px;" >
+    <app-navbar></app-navbar>
+    <div class="container d-flex flex-column  align-items-center">
+        <h1 >Welome,<span *ngIf="authenticatedUser!=undefined">{{authenticatedUser.name}}</span> </h1>
+        <h1 >Organize your work and your life.</h1>
+        <h5 class="text-center" style="width: 40%;" >
+            Gain concentration, organization and serenity with Todolist.
+        </h5>
+        <button 
+            *ngIf="authenticatedUser==undefined" 
+            class="btn btn-danger mt-3" 
+            style="width: 100px;"
+            routerLink="/login">
+            Login
+        </button>
+    </div>
+</div>
+

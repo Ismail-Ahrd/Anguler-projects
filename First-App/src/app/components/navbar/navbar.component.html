@@ -1,0 +1,10 @@
+<nav>
+    <ul class="nav-first">
+        <li><app-button text="Product" color="black" textColor="white" (btnClick)="getProdects()"></app-button></li>
+        <li><app-button text="Customers" color="black" textColor="white" (btnClick)="getCostumors()"></app-button></li>
+    </ul>
+    <ul class="nav-second">
+        <li><h4>{{userName}}</h4></li>
+        <li><app-button text="LogOut" color="black" textColor="white" (btnClick)="logOut()"></app-button></li>
+    </ul>
+</nav>

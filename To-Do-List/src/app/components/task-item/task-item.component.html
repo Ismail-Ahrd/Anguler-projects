@@ -1,0 +1,16 @@
+<div class="col mb-2">
+    <div class="row d-flex align-items-center border border-1 ">
+        <div class="col">
+            <button class="btn  fa fa-check-circle-o" ></button>
+        </div>
+        <div class="col ">
+            <h5>{{taskName}}</h5>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger fa fa-trash-o" (click)="handleDeleteTask()"></button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success " (click)="handleUpdateTask()">update</button>
+        </div>
+    </div>
+</div>

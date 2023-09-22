@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "student-management-syste-bacd5": {
+      "hosting": {
+        "angular-firebase-crud": [
+          "student-management-syste-bacd5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "student-management-syste-bacd5"
+  }
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <input style="width: 10%;"  type="checkbox" name="checkbox" id="checkbox">
+    <p style="width: 10%;">{{product.id}}</p>
+    <p style="width: 20%;">{{product.name}}</p>
+    <p style="width: 20%;">{{product.price}}</p>
+    <div *ngIf="isAdmin" style="width: 40%;"class="buttons-container">
+        <app-button 
+            text={{state}}
+            color="white" 
+            textColor={{color}}
+            btnBorderColor={{color}}
+            (btnClick)="onClick()">
+        </app-button>
+        <app-button 
+            text="Delete" 
+            color="red" 
+            textColor="white"
+            btnBorder="0"
+            (btnClick)="delete()">
+        </app-button>
+        <app-button 
+            text="Update" 
+            color="green" 
+            textColor="white"
+            btnBorder="0"
+            (btnClick)="update()">
+        </app-button>
+    </div>
+</div>

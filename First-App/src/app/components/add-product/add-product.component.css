@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.authentification-container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(236, 234, 234);
+    border-radius: 5px;
+}
+
+.authentification-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 99%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.form-name, .form-price{
+    width: 90%;
+    height: 50px;
+}
+
+.form-name input, .form-price input{
+    width: 100%;
+    margin-top: 10px;
+    height: 25px;
+}
+
+.btn-save{
+    height: 25px;
+    width: 90%;
+    background-color: rgb(0, 153, 255);
+    border: 0;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 10px;
+}

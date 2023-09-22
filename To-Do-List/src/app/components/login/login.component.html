@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header">Authentication</div>
+            <div class="card-body">
+                <p *ngIf="errorMessage" class="text-danger">{{errorMessage}}</p>
+                <form [formGroup]="userFormGroup" (ngSubmit)="handleLogin()" >
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" name="email" id="email" class="form-control" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" name="password" id="password" class="form-control" formControlName="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
